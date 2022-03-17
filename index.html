@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kochwelt</title>
+
+    <link rel="stylesheet" href="css/index_anna.css" />
+    <link rel="stylesheet" href="
+    css/header_footer_anna.css" />
+
+    <script src="js/include_html.js"></script>
+    <script src="js/nav_anna.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  
+    <!-- -----------------  HEADER  ----------------- -->
+
+  <body onload="includeHTML()" id="noscroll">
+    <header w3-include-html="templates/header.html" id="header"></header>
+
+    <!-- -----------------  SECTION 1  ----------------- -->
+
+    <section class="index_section section1">
+      <img class="index_img img_section1" src="img/brownies.jpg" />
+      <div class="content_section1">
+        <div class="text_section1">
+          <h2 class="h2_index">Schokoladige Brownies</h2>
+          <p>
+            Brownies können auch zu Hause sehr einfach gebacken
+            werden. In kurzer Zeit kannst du ein köstliches Dessert zaubern.
+          </p>
+        </div>
+
+        <a class="section1_btn button" href="recipe_anna2.html">Rezept öffnen</a>
+      </div>
+    </section>
+
+        <!-- -----------------  SECTION 2  ----------------- -->
+
+    <section class="index_section flex_col_anna section2">
+      <h2 class="h2_index">Lust auf was Neues?</h2>
+      <div class="content_section2">
+        <a href="recipe_mario.html" class="new_recipe_link flex_col_anna">
+          <img class="index_img" src="img/pasta-1264056_1920.jpg" />
+          <p>Nudelgericht</p>
+          <div class="new_recipe_link_overlay"></div>
+        </a>
+        <a href="recipe_sven.html" class="new_recipe_link flex_col_anna">
+          <img class="index_img" src="img/salad.jpg" />
+          <p>Griechischer Bauernsalat</p>
+          <div class="new_recipe_link_overlay"></div>
+        </a>
+        <a
+          href="recipe_anna.html"
+          class="new_recipe_link flex_col_anna last_item_anna"
+        >
+          <img class="index_img" src="img/curry.jpg" />
+          <p>Gemüse-Hähnchen-Curry</p>
+          <div class="new_recipe_link_overlay"></div>
+        </a>
+      </div>
+    </section>
+
+        <!-- -----------------  SECTION 3  ----------------- -->
+
+
+    <section class="index_section section3 flex_col_anna">
+      <h2 class="h2_index text_align">Pfanne vs. Wok - Was ist besser?</h2>
+      <div class="content_section3">
+        <p>
+          Der Wok ist ein traditionelles, asiatisches Kochgerät, dass unserer
+          Bratpfanne sehr ähnelt. Jedoch gibt es Unterschiede zwischen beiden
+          und manche schwören darauf, dass keine Pfanne einen Wok ersetzen
+          kann. Welche Vorteile hat der Wok gegenüber einer Bratpfanne wirklich? Und wofür eignet er sich besonders?
+        </p>
+        <img class="index_img img_section3" src="img/wok.jpg" alt="Image Wok" />
+      </div>
+    </section>
+
+        <!-- -----------------  FOOTER  ----------------- -->
+
+    <footer
+      w3-include-html="templates/footer.html"
+    ></footer>
+  </body>
+</html>

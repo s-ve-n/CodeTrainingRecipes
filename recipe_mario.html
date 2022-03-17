@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt</title>
+
+    <link rel="stylesheet" href="css/recipe_mario.css">
+    <link rel="stylesheet" href="css/header_footer_anna.css">
+
+    <script src="js/recipe_mario.js"></script>
+    <script src="js/nav_anna.js"></script>
+    <script src="js/include_html.js"></script>
+
+    <!-- Raleway -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body onload="includeHTML(), multiplier()" id="noscroll">
+    <header w3-include-html="templates/header.html" id="header"></header>
+
+    <div class="recipe-overcontainer">
+        <h1>Nudelgericht</h1>
+        <img class="salad-img" src="img/pasta-1264056_1920.jpg">
+
+        <div class="div-icons">
+            <div class="btnrecipe">
+                <img class="btnicons" src="img/clock-regular.svg">
+                10 Min.
+            </div>
+            <div class="btnrecipe">
+                <img class="btnicons" src="img/brain-solid.svg">
+                simpel
+            </div>
+            <div class="btnrecipe">
+                <img class="btnicons" src="img/calendar-alt-regular.svg">
+                28.09.2020
+            </div>
+        </div>
+
+        <div class="input-div">
+            <span class="incredients-for-text">Zutaten für</span>
+            <input id="input" class="input" type="number" min="1" value=4>
+            <button class="buttonportionen" onclick="multiplier()">Portionen</button>
+        </div>
+
+        <p id="ingredient1" class="incredientsbtn">g Penne Nudeln</p>
+        <p id="ingredient2" class="incredients-btn-uncolored">g Tomate(n)</p>
+        <p id="ingredient3" class="incredientsbtn">g Brokkoli</p>
+        <p id="ingredient4" class="incredients-btn-uncolored">g Champignons</p>
+        <p id="ingredient5" class="incredientsbtn">g Spargel</p>
+        <p id="ingredient6" class="incredients-btn-uncolored">Petersilie, Kräutermix und Salz</p>
+        <p id="ingredient7" class="incredientsbtn">Knoblauchzehen</p>
+        <p id="ingredient8" class="incredients-btn-uncolored">Zwiebel(n)</p>
+        <p id="ingredient9" class="incredientsbtn">ml Olivenöl</p>
+        <p id="ingredient10" class="incredients-btn-uncolored">ml Kokusnussdrink</p>
+
+        <h2>Zubereitung</h2>
+        <div class="div-icons">
+            <span class="btnrecipe">
+                <img class="btnicons" src="img/clock-regular.svg">
+                ca. 10 Minuten
+            </span>
+            <span class="btnrecipe">
+                <img class="btnicons" src="img/clock-regular.svg">
+                Gesamtzeit ca. 10 Minuten
+            </span>
+        </div>
+        <p class="preparation_text">
+            Topfwasser erhitzen bis es kocht, dann die Nudeln mit einer Prise Salz hinzufügen. In der Zwischenzeit das
+            Gemüsewaschen und zerkleinern. Anschließend das Gemüse in die Mikrowelle geben. Für die Soße müssen der
+            Knoblauch, die Zwiebel, das Olivenöl und ein Schuss Kokusnussdrink mit dem Stabmixer verarbeitet werden.
+            Wenn die Nudeln al dente sind, werden die Zutaten auf einem Teller vermengt und mit den Gewürzen mariniert.
+        </p>
+        <br>
+        <br>
+        <p>
+            <b>Rezept erstellt von</b>
+        </p>
+        <br>
+        <div class="creator-div">
+            <img class="profile-img" src="img/profile.png"> <p>Mario</p>
+        </div>
+    </div>
+
+    <footer w3-include-html="templates/footer.html"></footer>
+</body>

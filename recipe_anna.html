@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gemüse-Hähnchen-Curry</title>
+
+    <link rel="stylesheet" href="css/header_footer_anna.css" />
+    <link rel="stylesheet" href="css/recipe_anna.css">
+
+    <script src="js/include_html.js"></script>
+    <script src="js/nav_anna.js"></script>
+    <script src="js/recipe_anna.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body onload="includeHTML(), ingredientsTable('curry')" id="noscroll">
+    <header w3-include-html="templates/header.html" id="header"></header>
+
+    <section class="recipe_section">
+        <div class="recipe_head">
+            <h1>Gemüse-Hähnchen-Curry</h1>
+            <img src="img/curry.jpg" alt="Chickencurry" class="recipe_img">
+            <div class="properties_container">
+                <div class="properties"><img src="img/clock-regular.svg" alt="" class="properties_img">25&nbspMin.</div>
+                <div class="properties"><img src="img/brain-solid.svg" alt="" class="properties_img">simpel</div>
+                <div class="properties"><img src="img/calendar-alt-regular.svg" alt="" class="properties_img">09.09.2021</div>
+            </div>
+        </div>
+    <div class="ingredients">
+        <div class="ingredients_head">
+            <span>Zutaten für</span><input type="number" id="portions" value="4" class="input"><button class="button" onclick="ingredientsTable()">Portionen</button>
+        </div>
+        <table id="ingredients_table" class="ingredients_table">
+        </table>
+    </div>
+    <div class="preparation">
+        <h2>Zubereitung</h2>
+        <div class="properties_container">
+            <div class="properties">
+                <img src="img/clock-regular.svg" alt="" class="properties_img">25 Min.</div>
+            <div class="properties"><img src="img/clock-regular.svg" alt="" class="properties_img">Gesamtzeit ca. 40 Min.
+        </div>
+        </div>
+    </div>
+        <p class="preparation_text">Die Bohnen in kochendem Salzwasser 5 - 8 Minuten bissfest garen. Die Paprika, die Zucchini und die Lauchzwiebeln waschen und fein würfeln. Die Möhre schälen und in dünne Scheiben schneiden. Die Chilischote fein hacken oder Chilipulver verwenden.<br><br>            Das Fleisch in Streifen schneiden und in einer Pfanne mit der Hälfte des Öles kräftig anbraten, mit Salz und Pfeffer nach eigenem Geschmack würzen. Das Fleisch aus der Pfanne nehmen und beiseite stellen. <br> <br> Mit dem restlichen Öl das
+            Gemüse in der gleichen Pfanne andünsten, den Chili, geriebenen Ingwer und einen halben TL Currypulver dazugeben. Zusätzlich wieder mit Salz und Pfeffer abschmecken. <br><br> Die Bohnen, das Fleisch und die Sahne hinzufügen, kurz erhitzen,
+            mit einem halben TL Currypulver und etwas Koriander würzen und dann 5 - 7 Minuten bei schwacher Hitze köcheln lassen. <br><br>Zum Schluss noch einmal mit Salz und Pfeffer, nach Geschmack auch mit Cayennepfeffer abschmecken.</p>
+        <h3>Rezept erstellt von</h3>
+        <div class="profile">
+            <img src="img/profile.png" alt="" class="profile_img">Anna
+        </div>
+</div>
+
+    </section>
+    <footer class="flex_col_anna" w3-include-html="templates/footer.html"></footer>
+</body>
+
+</html>

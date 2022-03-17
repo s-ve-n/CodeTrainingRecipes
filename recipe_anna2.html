@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gemüse-Hähnchen-Curry</title>
+
+    <link rel="stylesheet" href="css/header_footer_anna.css" />
+    <link rel="stylesheet" href="css/recipe_anna.css">
+
+    <script src="js/include_html.js"></script>
+    <script src="js/nav_anna.js"></script>
+    <script src="js/recipe_anna.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body onload="includeHTML(), ingredientsTable('brownies')" id="noscroll">
+    <header w3-include-html="templates/header.html" id="header"></header>
+
+    <section class="recipe_section">
+        <div class="recipe_head">
+            <h1>Schokoladige Brownies</h1>
+            <img src="img/brownies.jpg" alt="Brownies" class="recipe_img">
+            <div class="properties_container">
+                <div class="properties"><img src="img/clock-regular.svg" alt="" class="properties_img">25&nbspMin.</div>
+                <div class="properties"><img src="img/brain-solid.svg" alt="" class="properties_img">simpel</div>
+                <div class="properties"><img src="img/calendar-alt-regular.svg" alt="" class="properties_img">09.09.2021</div>
+            </div>
+        </div>
+    <div class="ingredients">
+        <div class="ingredients_head">
+            <span>Zutaten für</span><input type="number" id="portions" value="1" class="input"><button class="button" onclick="ingredientsTable()">Portionen</button>
+        </div>
+        <table id="ingredients_table" class="ingredients_table">
+        </table>
+    </div>
+    <div class="preparation">
+        <h2>Zubereitung</h2>
+        <div class="properties_container">
+            <div class="properties">
+                <img src="img/clock-regular.svg" alt="" class="properties_img">ca. 25 Min.</div>
+            <div class="properties"><img src="img/clock-regular.svg" alt="" class="properties_img">Gesamtzeit ca. 55 Min.
+        </div>
+        </div>
+    </div>
+        <p class="preparation_text">Den Backofen auf 175°C Ober-/Unterhitze vorheizen. Die 425 g Zartbitterschokolade schmelzen. Die geschmolzene Schokolade und das Öl in die Rührschüssel geben und mit dem Mixer gut vermischen.<br><br>            Das Kakaopulver, den Zucker, den Vanillinzucker, das Salz und die Milch dazugeben und gut verrühren. Die Eier nacheinander dazugeben. Nach jedem Ei gut verrühren. Das Mehl dazugeben und verrühren. Die 100 g Schokolade mit dem Messer zerkleinern, zum Teig geben und mit einem Kochlöffel unterrühren.
+            <br> <br> Den Teig in das mit Backpapier ausgelegte Backblech geben und gleichmäßig verstreichen. Bei 175°C Ober-/Unterhitze für 30 Minuten in den vorgeheizten Backofen geben. <br><br> Die Schokolade für das Topping in einem Topf schmelzen, auf die fertig gebackenen Brownies geben und jeweils eine Brezel drauflegen. Wem die süß-salzig-Kombination zu abgefahren ist, der lässt die Brezeln einfach weg.</p>
+        <h3>Rezept erstellt von</h3>
+        <div class="profile">
+            <img src="img/profile.png" alt="" class="profile_img">Anna
+        </div>
+</div>
+
+    </section>
+    <footer class="flex_col_anna" w3-include-html="templates/footer.html"></footer>
+</body>
+
+</html>

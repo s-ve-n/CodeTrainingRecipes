@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kochwelt</title>
+
+    <link rel="stylesheet" href="css/recipe_sven.css" />
+    <link rel="stylesheet" href="css/header_footer_anna.css" />
+
+    <script src="js/nav_anna.js"></script>
+    <script src="js/recipe_sven.js"></script>
+    <script src="js/include_html.js"></script>
+
+    <!-- Raleway -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body onload="includeHTML(), multiplier()" id="noscroll">
+    <header w3-include-html="templates/header.html" id="header"></header>
+
+    <div class="recipe-overcontainer">
+      <h1>Griechischer Bauernsalat</h1>
+      <img class="salad-img" src="img/salad.jpg" />
+
+      <div class="div-icons">
+        <span class="btnrecipe">
+          <img class="btnicons" src="img/clock-regular.svg" />
+          15 Min.
+        </span>
+        <span class="btnrecipe">
+          <img class="btnicons" src="img/brain-solid.svg" />
+          simpel
+        </span>
+        <span class="btnrecipe">
+          <img class="btnicons" src="img/calendar-alt-regular.svg" />
+          20.09.2021
+        </span>
+      </div>
+
+      <div class="input-div">
+        <span class="incredients-for-text">Zutaten für</span>
+        <input id="input" class="input" type="number" min="1" value="4" />
+        <button class="buttonportionen" onclick="multiplier()">Portionen</button>
+      </div>
+
+      <p id="ingredient1" class="incredientsbtn">Stk Salatgurke(n)</p>
+      <p id="ingredient2" class="incredients-btn-uncolored">
+        Stk Paprikaschote(n)
+      </p>
+      <p id="ingredient3" class="incredientsbtn">g Tomate(n)</p>
+      <p id="ingredient4" class="incredients-btn-uncolored">Stk Zwiebeln</p>
+      <p id="ingredient5" class="incredientsbtn">g Schafskäse</p>
+      <p id="ingredient6" class="incredients-btn-uncolored">g Oliven</p>
+      <p id="ingredient7" class="incredientsbtn">Prise Salz und Pfeffer</p>
+      <p id="ingredient8" class="incredients-btn-uncolored">Zitrone(n)</p>
+      <p id="ingredient9" class="incredientsbtn">ml Olivenöl</p>
+      <p id="ingredient10" class="incredients-btn-uncolored">Prise Oregano</p>
+
+      <h2>Zubereitung</h2>
+      <div class="div-icons">
+        <span class="btnrecipe">
+          <img class="btnicons" src="img/clock-regular.svg" />
+          ca. 15 Minuten
+        </span>
+        <span class="btnrecipe">
+          <img class="btnicons" src="img/clock-regular.svg" />
+          Gesamtzeit ca. 15 Minuten
+        </span>
+      </div>
+      <p class="preparation_text">
+        Gurke waschen und ungeschält in dünne Scheiben oder Stücke schneiden.
+        Paprika waschen, entkernen und in dünne Streifen schneiden. Tomaten
+        waschen und achteln. Zwiebeln schälen und in feine Ringe schneiden.
+        Schafskäse würfeln und mit Oregano bestreuen. Oliven abgießen und mit
+        Gurke, Paprika, Tomaten, Zwiebeln und Schafskäse in eine Schüssel geben.
+        Olivenöl, Zitronensaft, Salz und Pfeffer zu einer Sauce verrühren und
+        über den Salat gießen. Umrühren. Fertig ist der griechische Bauernsalat!
+      </p>
+      <br />
+      <br />
+      <p>
+        <b>Rezept erstellt von</b>
+      </p>
+      <br />
+      <div class="creator-div">
+        <img class="profile-img" src="img/profile.png" />
+        <p>Sven</p>
+      </div>
+    </div>
+
+    <footer w3-include-html="templates/footer.html"></footer>
+  </body>
+</html>

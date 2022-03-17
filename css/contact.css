@@ -1,0 +1,111 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  --greentext: rgb(0, 128, 0);
+}
+
+.div-contact {
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  background-color: #EFEFEF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  padding: 2.5%;
+  margin-bottom: 8%;
+  border-radius: 10px;
+}
+
+.contact-input {
+  height: 15%;
+  width: 40%;
+  margin-bottom: 3%;
+  background-color: white;
+  border-width: 1px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.contact-message {
+  height: 60%;
+  width: 80%;
+  margin-bottom: 3%;
+  resize: none;
+  border-radius: 10px;
+  background-color: white;
+  border-width: 1px;
+  text-align: center;
+  padding-top: 10%;
+}
+
+.contact-email {
+  height: 15%;
+  width: 40%;
+  background-color: rgb(0, 128, 0);
+  color: white;
+  border-width: 1px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+h4 {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  margin: 50px;
+}
+
+.successdiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #EFEFEF;
+  border-radius: 10px;
+  height: 20vh;
+  margin: 30vh 13% 30vh 13%;
+}
+
+.buttonsuccess {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  background-color: var(--greentext);
+  color: white;
+  width: 200px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.buttonsuccess a:hover {
+  text-decoration: underline;
+}
+
+@media(max-width: 1000px) {
+  .form {
+    background-color: #EFEFEF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding: 2.5%;
+    margin-bottom: 8%;
+    border-radius: 10px;
+  }
+  .contact-input {
+    height: 15%;
+    width: 80%;
+    margin-bottom: 3%;
+    background-color: white;
+    border-width: 1px;
+    text-align: center;
+    border-radius: 10px;
+  }
+}

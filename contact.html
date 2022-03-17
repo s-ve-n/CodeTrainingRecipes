@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt</title>
+
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/header_footer_anna.css">
+
+    <script src="js/contact.js"></script>
+    <script src="js/nav_anna.js"></script>
+    <script src="js/include_html.js"></script>
+
+    <!-- Raleway -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body onload="includeHTML()" id="noscroll">
+    <header w3-include-html="templates/header.html" id="header"></header>
+
+    <h4>Kontaktformular</h4>
+
+    <div class="div-contact">
+        <form class="form" action="send_mail.php" method="POST">
+            <input name="name" class="contact-input" placeholder="Dein vollständiger Name">
+
+            <textarea name="message" class="contact-message" cols="30" rows="9"
+                placeholder="Deine Nachricht an uns"></textarea>
+
+            <button class="contact-email" type="submit">E-Mail senden</button>
+        </form>
+    </div>
+
+    <footer w3-include-html="templates/footer.html"></footer>
+</body>
